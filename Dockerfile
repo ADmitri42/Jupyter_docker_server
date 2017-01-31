@@ -6,4 +6,4 @@ RUN conda create -y --dry-run -n Python2 python=2 anaconda && conda create -y -n
 
 COPY jupyter_notebook_config.py /root/.jupyter/
 
-ENTRYPOINT jupyter notebook
+ENTRYPOINT nohup jupyter notebook
